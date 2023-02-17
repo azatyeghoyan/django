@@ -7,7 +7,30 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>HELLO</h1>
-    <form action="res/"></form>
+    <form method="POST" action="res/">
+        {% csrf_token %}
+        <input type="text" name="num1">
+        <input type="text" name="num2">
+        <input type="text" name="char">
+        <button type="submit">Calculate</button>
+    </form>
+    
+    <!-- <h1>HELLO</h1>
+    <hr>
+    <h2>HELLO</h2>
+    <h3>HELLO</h3>
+    <hr>
+    <h4>HELLO</h4>
+    <h5>HELLO</h5>
+    <hr>
+    <h6>HELLO</h6>
+    <br>
+    <br>
+    <br>
+    <br>
+    <p>HELLO</p>
+    <hr>
+    <hr>
+    <hr> -->
 </body>
 </html>
